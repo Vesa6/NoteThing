@@ -16,10 +16,10 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 users_db = {
     "testuser": {
-        "username": "testuser",
+        "username": "test",
         "full_name": "Test User",
         "email": "test@example.com",
-        "hashed_password": pwd_context.hash("password123"),
+        "hashed_password": pwd_context.hash("test"), #TODO: update this to use a perm. hash
     }
 }
 

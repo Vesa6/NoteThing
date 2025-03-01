@@ -35,3 +35,6 @@ def delete_contact(contact_id: int, user: dict = Depends(get_current_user)):
     contacts = [c for c in contacts if c["id"] != contact_id]
     save_contacts(contacts)
     return {"message": "Contact deleted successfully"}
+
+#@router.post("/{users}")
+#def add_user()
